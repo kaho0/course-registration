@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./assets/Header/Header";
+import Cards from "./assets/Cards/Cards";
+import Coursedetails from "./assets/Coursename/Coursedetails";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [course, setCourse] = useState([]);
+  const [totalCreditHours, setTotalCreditHours] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  const handleAddToCourse = (card) => {
+    const isDuplicate = course.some((item) => item.id === card.id);
+
+    if (isDuplicate) {
+      alert(`The course "${card.title}" is already added.`);
+    } else {
+      const newTotalCreditHours = totalCreditHours + card.credit;
+      if (newTotalCreditHours > 20) {
+        alert("Total credit hours exceed the limit of 20.");
+      } else {
+        const newCourse = [...course, card];
+        setCourse(newCourse);
+        setTotalCreditHours(newTotalCreditHours);
+        setTotalPrice(totalPrice + card.price);
+      }
+    }
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header />
+      <div className="md:flex justify-between p-4 m-4">
+        <Cards handleAddToCourse={handleAddToCourse}></Cards>
+        <Coursedetails
+          course={course}
+          totalCreditHours={totalCreditHours}
+          totalPrice={totalPrice}
+        ></Coursedetails>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

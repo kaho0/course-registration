@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/LhYsR9L/C-Language-Introduction.png",
+    "title": "Introduction to C Programming",
+    "description": "Learn the basics of C programming language, covering syntax, data types, and simple algorithms.",
+    "price": 15000,
+    "credit": 1
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/d7NDr22/Characteristics-of-an-Algorithm-1024x630.jpg",
+    "title": "Introduction to Algorithms",
+    "description": "Understand fundamental algorithms and their implementations to solve problems efficiently.",
+    "price": 25000,
+    "credit": 2
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/ScbSrX6/15-Best-Embedded-Systems-Programming-Languages.jpg",
+    "title": "Introduction to C++ for DSA",
+    "description": "Master the use of C++ in Data Structures and Algorithms (DSA) with hands-on examples.",
+    "price": 10000,
+    "credit": 10
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/t2HCRYP/what-is-data-structure-and-algorithms-1024x512.png",
+    "title": "Basic Data Structures",
+    "description": "Learn about fundamental data structures such as arrays, linked lists, stacks, and queues.",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/Qm58LjN/Copy-of-Copy-of-Copy-of-Untitled-Design-1-1.png",
+    "title": "Introduction to OOP Python",
+    "description": "A beginner's guide to Object-Oriented Programming in Python, with practical coding examples.",
+    "price": 19000,
+    "credit": 7
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/Jr6fH12/What-is-Software-Engineering.jpg",
+    "title": "Software Engineering",
+    "description": "Explore the principles and methodologies of software engineering, including development and testing.",
+    "price": 23000,
+    "credit": 3
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/RPwVK8q/IVAAP-AWS-architecture.jpg",
+    "title": "AWS, Cloud Computing",
+    "description": "Gain insights into cloud computing with Amazon Web Services (AWS) and its applications.",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/Dpy4Jgz/SQL-structure.png",
+    "title": "Database (MySQL)",
+    "description": "Learn how to design, manage, and query databases using MySQL.",
+    "price": 19000,
+    "credit": 6
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/bLwrxPn/how-to-approach-a-coding-problem.png",
+    "title": "Problem-Solving Part",
+    "description": "Improve your problem-solving skills by tackling various challenges and algorithms.",
+    "price": 23000,
+    "credit": 9
+  }
+]
